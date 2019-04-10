@@ -147,3 +147,9 @@ button#toggle-audio i.fa {
     font-size: 24px;
     color: greenyellow
 }
+
+.drink-size.active,
+.drink-temp.active {
+    border: 5px solid mediumseagreen;
+    border-radius: 20px;
+}
