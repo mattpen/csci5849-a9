@@ -1,0 +1,149 @@
+button.simple {
+    width: 23%;
+}
+
+button.nav-button {
+    width: 18%;
+}
+
+button {
+    border: 0;
+    padding: 1px;
+    margin: 6px;
+    font-size: 24px;
+}
+
+button i.fa {
+    font-size: 50px;
+    display: block;
+    margin: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0;
+}
+
+div#simple {
+    margin: auto;
+}
+
+
+
+i.fa-check {
+    color: green;
+}
+
+i.fa-times,
+i.fa-ban {
+    color: red;
+}
+
+i.fa-praying-hands,
+i.fa-thumbs-up {
+    color: blue;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+#display {
+    text-align: center;
+    font-size: 30px;
+    margin: 5px 10px;
+    background: blue;
+    color: white;
+    padding: 5px;
+}
+
+#content {
+    height: calc(100vh - 330px);
+    padding: 20px 0;
+    border: 5px solid mediumseagreen;
+    overflow: scroll;
+}
+
+#content button {
+    width: 95%;
+}
+
+#content input,
+#content label {
+    font-size: 24px;
+    margin: 5px;
+    width: 94%;
+}
+
+.nav-button.active {
+    border: 5px solid mediumseagreen;
+    border-bottom: 5px solid white;
+}
+
+.nav-button {
+    border-bottom: 5px solid mediumseagreen;
+}
+
+button {
+    background: white;
+}
+
+div#nav {
+    margin-bottom: -11px;
+}
+
+div.col-3 {
+    width: 33%;
+    display: inline-block;
+}
+
+div.col-2 {
+    width: 48%;
+    display: inline-block;
+}
+
+
+#drinks .order button,
+#food button,
+#food img {
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+}
+
+#drinks .order img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+button.small i.fa {
+    font-size: 24px
+}
+
+button.medium i.fa {
+    font-size: 40px
+}
+
+button.large i.fa {
+    font-size: 64px
+}
+
+button#toggle-audio {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    background: transparent;
+}
+
+button#toggle-audio i.fa {
+    font-size: 24px;
+    color: greenyellow
+}

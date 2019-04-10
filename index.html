@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSCI5849 A9 - Restaurant AAC</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+<link rel="stylesheet" href="aac.css" />
+</head>
+<body>
+
+<div class="title">
+  <h1 id="display">Welcome to Restaurant AAC</h1>
+  <button id="toggle-audio"><i class="fa fa-volume-up"></i></button>
+</div>
+
+<div id="nav">
+  <button class="nav-button active" id="seating-toggle"><i class="fa fa-chair"></i>Seating</button>
+  <button class="nav-button" id="drinks-toggle"><i class="fa fa-beer"></i>Drinks</button>
+  <button class="nav-button" id="food-toggle"><i class="fa fa-hamburger"></i>Food</button>
+  <button class="nav-button" id="miscellaneous-toggle"><i class="fa fa-question"></i>Miscellaneous</button>
+  <button class="nav-button" id="about-toggle"><i class="fa fa-info"></i>About</button>
+</div>
+
+<div id="content">
+
+  <div class="section active" id="seating">
+    <div class="col-3">
+      <label>
+        Number of Seats
+        <input type="number" name="num-seats" value="2" min="1"/>
+      </label>
+      <button id="seats"><i class="fa fa-chair"></i>Request seating</button>
+    </div>
+    <div class="col-3">
+      <button class="speak"><i class="fa fa-clock"></i>How long is the wait?</button>
+    </div>
+    <div class="col-3">
+      <button class="speak"><i class="fa fa-baby"></i>Can we get a high chair or a booster?</button>
+    </div>
+  </div>
+
+  <div class="section" id="drinks">
+    <div class="order col-2">
+      <div>
+        <button class="drink-size small" value="small"><i class="fa fa-beer"></i></button>
+        <button class="drink-size medium" value="medium"><i class="fa fa-beer"></i></button>
+        <button class="drink-size large" value="large"><i class="fa fa-beer"></i></button>
+      </div>
+      <div>
+        <button class="drink-temp" value="iced"><i class="fa fa-snowflake"></i></button>
+        <button class="drink-temp" value="hot"><i class="fa fa-mug-hot"></i></button>
+      </div>
+      
+      <div>
+        <button class="drink-name" value="water"><img src="images/water.jpg"/></button>
+        <button class="drink-name" value="soda"><img src="images/soda.jpg"/></button>
+        <button class="drink-name" value="coffee"><img src="images/coffee.jpg"></i></button>
+      </div>
+    </div>
+    <div class=col-2>
+      <button class="speak"><i class="fa fa-sync"></i>Can I get a refill?</button>
+    </div>
+  </div>
+
+  <div class="section" id="food">
+    <button class="speak"><i class="fa fa-check"></i>I'll order one of these.</button>
+    <button class="speak"><i class="fa fa-ban"></i>This is not what I ordered.</button>
+
+    <button class="free" value="nut free"><img src="images/nut-free.jpg" /></button>
+    <button class="free" value="gluten free"><img src="images/gluten-free.jpg" /></button>
+    <button class="free" value="dairy free"><img src="images/dairy-free.gif" /></button>
+    <button class="free" value="vegetarian"><img src="images/vegetarian.jpg" /></button>
+    <button class="return" value="undercooked"><img src="images/undercooked.png" /></button>
+    <button class="return" value="burnt"><img src="images/burnt.jpg" /></button>
+  </div>
+
+  <div class="section" id="miscellaneous">
+    <div class="col-3"><button class="speak"><i class="fa fa-toilet"></i>Can you help me find the restroom?</button></div>
+    <div class="col-3"><button class="speak"><i class="fa fa-dollar-sign"></i>Can you bring the check?</button></div>
+    <div class="col-3"><button class="speak"><i class="fa fa-box-open"></i>Can you bring a to go box?</button></div>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Restaurant AAC</h2>
+    <p>This app is a touch interface designed to facilitate conversations that typically happen at restaurants for people with speech impairments.  The use case it was designed for was people with severe aphasia that do not have motor impairments in at least one arm.  The goal is to facilitate independence for visiting a restaurant for patients that are recovering from a stroke.  As of now, it still requires the user to point at items on a menu that they would like to order, if they cannot speak the item themselves.  In addition it features a volume toggle to easily enter a private mode in order to ask for the restroom or check for instance.  In the future, it would be ideal to pair with restaurants or some type of restaurant data service and create a custom accessible interface automatically for each restaurants menu.  This would allow the app to be used with alternative pointing devices such as eye gaze.  The app attempts to associate imagery with the desired speech output, but there remains room for significant improvements in this regard.</p>
+
+    <h2>Sources</h2>
+    <ul>
+      <li>jQuery: https://jquery.com/</li>
+      <li>FontAwesome: https://fontawesome.com/</li>
+      <li>Water image: http://www.humandevelopmentzone.com/a-glass-of-water-please.html</li>
+      <li>Soda image: http://www.needgreatinfo.com/articles/soda_dangers1008.html</li>
+      <li>Coffee image: https://en.wikipedia.org/wiki/Coffee</li>
+      <li>Nut Free image: https://cpes.sad44.org/apps/news/show_news.jsp?REC_ID=395694&id=0</li>
+      <li>Gluten Free image: https://blog.safetychain.com/gluten-free-regulations-food-companies</li>
+      <li>Dairy Free image: https://samadimd.com/common-diseases/are-you-lactose-intolerant</li>
+      <li>Vegetarian image: http://chittagongit.com/icon/vegetarian-icon-24.html</li>
+      <li>Burned food image: https://www.hidabroot.com/article/192615/Warning-Burned-Food-May-Cause-Cancer</li>
+      <li>Raw food image: https://www.indiamart.com/proddetail/raw-chicken-19112645912.html</li>
+    </ul>
+  </div> 
+</div>
+
+<div id="simple">
+  <button class="simple speak"><i class="fa fa-check"></i>Yes</button>
+  <button class="simple speak"><i class="fa fa-praying-hands"></i>Please</button>
+  <button class="simple speak"><i class="fa fa-times"></i>No</button>
+  <button class="simple speak"><i class="fa fa-thumbs-up"></i>Thank You</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="aac.js"></script>
+</body>
+</html> 
